@@ -200,7 +200,7 @@ fun main() {
                          println("Ingrese el año:")
                             val year = readLine()?.toIntOrNull()
                             if (year != null) {
-                                if (year % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0)) {
+                                if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
                                     println("$year es un año bisiesto.")
                                 } else {
                                     println("$year no es un año bisiesto.")
