@@ -31,9 +31,9 @@ fun main() {
                         println("Ingrese la base del triángulo:")
                         val base = Scanner.nextDouble()
                         println("Ingrese la altura del triángulo:")
-                        val altura = Scanner.nextDouble()
-                        val areaTriangulo = base * altura / 2
-                        println("El área del triángulo es: $areaTriangulo")
+                        val height = Scanner.nextDouble()
+                        val areaTriangle = base * height / 2
+                        println("El área del triángulo es: $areaTriangle")
                     }
 
                     2 -> {
@@ -42,64 +42,64 @@ fun main() {
                         val num1 = Scanner.nextDouble()
                         println("Ingrese el segundo número:")
                         val num2 = Scanner.nextDouble()
-                        val suma = num1 + num2
-                        println("La suma de los dos números es: $suma")
+                        val addition = num1 + num2
+                        println("La suma de los dos números es: $addition")
 
                     }
 
                     3 -> {
                         println("Ingrese un número:")
                         val num = Scanner.nextDouble()
-                        val cuadrado = num * num
-                        println("El número elevado al cuadrado es: $cuadrado")
+                        val square = num * num
+                        println("El número elevado al cuadrado es: $square")
                     }
 
                     4 -> {
                         println("Ingrese la cantidad de euros:")
                         val euros = Scanner.nextDouble()
-                        val tasaCambio = 1.17 // Tasa de cambio a dólares
-                        val dolares = euros * tasaCambio
-                        println("$euros euros equivalen a $dolares dólares")
+                        val rateChange = 1.17
+                        val dollar = euros * rateChange
+                        println("$euros euros equivalen a $dollar dólares")
                     }
 
                     5 -> {
                         println("Ingrese el lado del cuadrado:")
-                        val lado = Scanner.nextDouble()
-                        val areaCuadrado = lado * lado
-                        val perimetroCuadrado = 4 * lado
-                        println("El área del cuadrado es: $areaCuadrado")
-                        println("El perímetro del cuadrado es: $perimetroCuadrado")
+                        val side = Scanner.nextDouble()
+                        val areaSquare = side * side
+                        val perimeterSquare = 4 * side
+                        println("El área del cuadrado es: $areaSquare")
+                        println("El perímetro del cuadrado es: $perimeterSquare")
                     }
 
                     6 -> {
                         println("Ingrese el radio del cilindro:")
                         val radio = Scanner.nextDouble()
                         println("Ingrese la altura del cilindro:")
-                        val alturaCilindro = Scanner.nextDouble()
-                        val areaCilindro = 2 * radio * (radio + alturaCilindro)
-                        val volumenCilindro = radio * radio * alturaCilindro
-                        println("El área del cilindro es: $areaCilindro")
-                        println("El volumen del cilindro es: $volumenCilindro")
+                        val heightCylinder = Scanner.nextDouble()
+                        val areaCylinder = 2 * radio * (radio + heightCylinder)
+                        val volumeCylinder = radio * radio * heightCylinder
+                        println("El área del cilindro es: $areaCylinder")
+                        println("El volumen del cilindro es: $volumeCylinder")
                     }
 
                     7 -> {
                         println("Ingrese el radio de la circunferencia:")
-                        val radioCircunferencia = Scanner.nextDouble()
-                        val longitudCircunferencia = 2 * radioCircunferencia
-                        val areaCirculo = Math.PI * radioCircunferencia * radioCircunferencia
-                        println("La longitud de la circunferencia es: $longitudCircunferencia")
-                        println("El área del círculo inscrito es: $areaCirculo")
+                        val radioCircumference = Scanner.nextDouble()
+                        val lengthCircumference = 2 * radioCircumference
+                        val areaCircle = radioCircumference * radioCircumference
+                        println("La longitud de la circunferencia es: $lengthCircumference")
+                        println("El área del círculo inscrito es: $areaCircle")
                     }
 
                     8 -> {
                         println("Ingrese el primer número:")
-                        val numero1 = Scanner.nextDouble()
+                        val number1 = Scanner.nextDouble()
                         println("Ingrese el segundo número:")
-                        val numero2 = Scanner.nextDouble()
+                        val number2 = Scanner.nextDouble()
                         println("Ingrese el tercer número:")
-                        val numero3 = Scanner.nextDouble()
-                        val promedio = (numero1 + numero2 + numero3) / 3
-                        println("El promedio de los tres números es: $promedio")
+                        val number3 = Scanner.nextDouble()
+                        val average = (number1 + number2 + number3) / 3
+                        println("El promedio de los tres números es: $average")
                     }
 
                     99 -> {
@@ -121,17 +121,16 @@ fun main() {
                 println("4. numeros A y B")
                 println("5. Cociente de numeros ")
                 println("6. Suma o multiplicaion de numeros positivos o negativos ")
-                println("7. Definir si un año bisiesto o no")
                 println("99. Salir")
                 println("Selecciona la opción que deseas: ")
                 val userConditionals = Scanner.nextInt()
                 when (userConditionals) {
                     1 -> {
                         println("Ingrese un número:")
-                        val numero = Scanner.nextDouble()
-                        if (numero > 0) {
+                        val number = Scanner.nextDouble()
+                        if (number > 0) {
                             println("El número es positivo.")
-                        } else if (numero < 0) {
+                        } else if (number < 0) {
                             println("El número es negativo.")
                         } else {
                             println("El número es cero.")
@@ -160,10 +159,10 @@ fun main() {
                         val numB = Scanner.nextInt()
                         println("Ingrese el tercer número:")
                         val numC = Scanner.nextInt()
-                        val mayor = maxOf(numA, numB, numC)
-                        val menor = minOf(numA, numB, numC)
-                        println("El número mayor es: $mayor")
-                        println("El número menor es: $menor")
+                        val elderly = maxOf(numA, numB, numC)
+                        val minor = minOf(numA, numB, numC)
+                        println("El número mayor es: $elderly")
+                        println("El número menor es: $minor")
                     }
 
                     4 -> {
@@ -182,8 +181,8 @@ fun main() {
                         println("Ingrese el número B:")
                         val numB2 = Scanner.nextDouble()
                         if (numB2 != 0.0) {
-                            val cociente = numA2 / numB2
-                            println("El cociente entre A y B es: $cociente")
+                            val quotient = numA2 / numB2
+                            println("El cociente entre A y B es: $quotient")
                         } else {
                             println("La división no es posible (B es igual a 0)")
                         }
@@ -198,10 +197,7 @@ fun main() {
                         println("Resultado: $result")
                     }
 
-                    7 -> {
-                        println("Ingrese el radio de la circunferencia:")
 
-                    }
 
                     99 -> {
                         println("Saliendo del programa...")
