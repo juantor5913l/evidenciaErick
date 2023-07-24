@@ -196,7 +196,19 @@ fun main() {
                         val result = if (numA3 < 0 || numB3 < 0) numA3 + numB3 else numA3 * numB3
                         println("Resultado: $result")
                     }
-
+                    7 -> {
+                         println("Ingrese el año:")
+                            val year = readLine()?.toIntOrNull()
+                            if (year != null) {
+                                if (year % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0)) {
+                                    println("$year es un año bisiesto.")
+                                } else {
+                                    println("$year no es un año bisiesto.")
+                                }
+                            } else {
+                                println("Entrada inválida. Por favor, ingrese un año válido.")
+                            }
+                    }
 
 
                     99 -> {
